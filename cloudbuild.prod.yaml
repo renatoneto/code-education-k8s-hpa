@@ -41,3 +41,6 @@ steps:
       - 'apply'
       - '-f'
       - 'k8s/deployment_final.yaml'
+    env:
+      - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1'
