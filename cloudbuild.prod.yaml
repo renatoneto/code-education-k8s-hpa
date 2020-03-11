@@ -6,7 +6,7 @@ steps:
       - 'sqrt'
     env: ['GOPATH=/workspace']
 
-  - name: 'gcr.io/cloud-builders'
+  - name: 'gcr.io/cloud-builders/go'
     id: Executando testes
     args:
       - 'test'
