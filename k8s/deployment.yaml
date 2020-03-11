@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: go-hpa
-          image: renatoneto/go-hpa:latest
+          image: APP_IMAGE
           ports:
             - containerPort: 80
           resources:
