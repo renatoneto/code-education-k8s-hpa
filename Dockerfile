@@ -7,7 +7,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o sqrt .
 
 FROM scratch
 
-COPY --from=builder /src /
+COPY --from=builder /go/src/sqrt /
 
 EXPOSE 8000
 CMD ["/sqrt"]
